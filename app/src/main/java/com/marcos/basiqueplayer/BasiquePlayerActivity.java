@@ -1,11 +1,11 @@
 
 package com.marcos.basiqueplayer;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
-public class BasiquePlayerActivity extends AppCompatActivity {
+public class BasiquePlayerActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
