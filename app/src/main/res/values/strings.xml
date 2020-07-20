@@ -2,5 +2,6 @@
     <string name="app_name">Basique player</string>
     <string name="basique_player_play">Play</string>
     <string name="basique_player_stop">Stop</string>
+    <string name="basique_player_pause">Pause</string>
     <string name="description">Alarm - Morning flower my-free-mp3s.com </string>
 </resources>

@@ -7,7 +7,12 @@ public class AudioPlayer extends MediaPlayer {
     private MediaPlayer mPlayer;
 
     public void play(Context c){
-        stop();
+        //resume if paused
+        if(mPlayer != null){
+            mPlayer.start();
+            return;
+        }
+        //stop();
         mPlayer = MediaPlayer.create(c, R.raw.alarm);
         mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
             @Override
@@ -22,6 +27,12 @@ public class AudioPlayer extends MediaPlayer {
         if(mPlayer != null){
             mPlayer.release();
             mPlayer = null;
+        }
+    }
+
+    public void pause(){
+        if(mPlayer != null){
+            mPlayer.pause();
         }
     }
 }

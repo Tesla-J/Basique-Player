@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 public class BasiquePlayerFragment extends Fragment {
     private Button mPlayButton;
     private Button mStopButton;
+    private Button mPauseButton;
     private AudioPlayer mPlayer;
 
     @Override
@@ -30,6 +31,13 @@ public class BasiquePlayerFragment extends Fragment {
             @Override
             public void onClick(View v){
                 mPlayer.stop();
+            }
+        });
+        mPauseButton = (Button) v.findViewById(R.id.pause_button);
+        mPauseButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                mPlayer.pause();
             }
         });
 
