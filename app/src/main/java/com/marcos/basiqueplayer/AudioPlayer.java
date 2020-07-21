@@ -4,35 +4,35 @@ import android.content.Context;
 import android.media.MediaPlayer;
 
 public class AudioPlayer extends MediaPlayer {
-    private MediaPlayer mPlayer;
+    private MediaPlayer mAudioPlayer;
 
     public void play(Context c){
         //resume if paused
-        if(mPlayer != null){
-            mPlayer.start();
+        if(mAudioPlayer != null){
+            mAudioPlayer.start();
             return;
         }
         //stop();
-        mPlayer = MediaPlayer.create(c, R.raw.alarm);
-        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
+        mAudioPlayer = MediaPlayer.create(c, R.raw.alarm);
+        mAudioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
             @Override
             public void onCompletion(MediaPlayer mp){
                 stop();
             }
         });
-        mPlayer.start();
+        mAudioPlayer.start();
     }
 
     public void stop(){
-        if(mPlayer != null){
-            mPlayer.release();
-            mPlayer = null;
+        if(mAudioPlayer != null){
+            mAudioPlayer.release();
+            mAudioPlayer = null;
         }
     }
 
     public void pause(){
-        if(mPlayer != null){
-            mPlayer.pause();
+        if(mAudioPlayer != null){
+            mAudioPlayer.pause();
         }
     }
 }
