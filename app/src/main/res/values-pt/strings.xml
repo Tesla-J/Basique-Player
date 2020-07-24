@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Basique player</string>
+    <string name="basique_player_play">Tocar</string>
+    <string name="basique_player_stop">Parar</string>
+    <string name="basique_player_pause">Pausar</string>
+    <string name="description">Alarm - Morning flower my-free-mp3s.com </string>
+    <string name="watch_video_button">Assistir vídeo</string>
+</resources>

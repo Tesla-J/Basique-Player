@@ -37,15 +37,10 @@
             android:text="@string/basique_player_pause"
             />
     </TableRow>
-    <TableRow
-        android:layout_gravity="right"
-        >
         <Button
             android:id="@+id/watch_video_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/watch_video_button"
             />
-
-    </TableRow>
 </TableLayout>
